@@ -31,7 +31,7 @@ npm start
 
 To start Locust use a separate terminal window and run:
 ```
-locust -f myFirstTest.py
+locust -f baseLocustTest.py
 ```
 Once Locust.io is running, open a browser and navigate to localhost:8089
 
