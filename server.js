@@ -142,9 +142,13 @@ if ( cluster.isMaster ) {
   } );
 
   app.listen( 1337, function() {
-    console.log( 'app server is running on port 1337' );
-    console.log( 'clusterid: ' + cluster.worker.id );
-    console.log( 'End Point:\n/locust-test\n\nMETHODS:\nGET\nPOST\nPUT\nDELETE' );
-    console.log( '\n\nEnd Point:\n/locust-test-mobile\n\nMETHODS:\nGET\nPOST\nPUT\nDELETE' );
+    console.log(
+      '***************************************\n' +
+      'app server is running on port 1337\n' +
+      'clusterid: ' + cluster.worker.id + '\n' +
+      'End Point:\n/locust-test\n\nMETHODS:\nGET\nPOST\nPUT\nDELETE' +
+      '\n\nEnd Point:\n/locust-test-mobile\n\nMETHODS:\nGET\nPOST\nPUT\nDELETE\n' +
+      '***************************************\n'
+    );
   } );
 }
