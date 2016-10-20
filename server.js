@@ -3,6 +3,7 @@ var cluster = require( 'cluster' );
 
 if ( cluster.isMaster ) {
   var cpuCount = require( 'os' ).cpus().length;
+  console.log( 'number of clusters: ' + cpuCount + '\n');
 
   for ( var i = 0; i < cpuCount; i += 1 ) {
     cluster.fork();
